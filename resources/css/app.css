@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  
+  --color-brand-cream: #FAF9F6;
+  --color-brand-sand: #F3F1EC;
+  --color-brand-black: #141414;
+  --color-brand-gold: #C5A059;
+  --color-brand-border: #E8E5DF;
+}
+
+/* Strict mobile overflow prevention */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+/* Luxury text selection */
+::selection {
+  background-color: #141414;
+  color: #FAF9F6;
+}
+
+/* Touch targets optimization */
+button, a, input, select, textarea {
+  touch-action: manipulation;
+}
